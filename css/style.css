@@ -1,0 +1,139 @@
+:root {
+    --bg-color: #F7FCFF;
+    --color-red: #E92042;
+    --color-font-dark: #0D0139;
+    --color-font-light: #B3BBCC;
+    --font-title: 'Fredoka One', cursive;
+    --font-text: 'Dosis', sans-serif;
+    --color-icons: #9DA8BE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.hero {
+    display: grid;
+    grid-template-rows: 200px 3fr 3fr 3fr 60px;
+    grid-template-columns: 130px 7fr;
+}
+
+
+/* Aside styles */
+
+.content-aside {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem 0;
+    box-shadow: 5px 0 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.social-media {
+    height: 30vh;
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.social-media-icons {
+    color: var(--color-icons);
+    font-size: 28px;
+    text-decoration: none;
+}
+
+
+/* Header styles */
+
+.header {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: white;
+    box-shadow: 0 5px 3px 0 rgba(0, 0, 0, 0.15);
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.title-header {
+    grid-area: 2 / 2 / 3 / 5;
+    font-size: 2rem;
+    color: var(--color-font-dark);
+    font-family: var(--font-title);
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.header nav {
+    grid-area: 1 / 9 / 2 / 12;
+    display: flex;
+    align-items: center;
+}
+
+.header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header nav ul li {
+    list-style: none;
+}
+
+.header nav ul li a {
+    color: var(--color-font-dark);
+    font-size: 18px;
+    font-family: var(--font-title);
+    text-decoration: none;
+}
+
+
+/* Hero description styles */
+
+.hero-description {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+
+/* About us styles */
+
+.about-me {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+
+/* Portfolio styles */
+
+.portfolio {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+
+/* Footer styles */
+
+.footer {
+    grid-area: 5 / 2 / 6 / 13;
+    background-color: var(--color-red);
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    flex-direction: column;
+    font-family: var(--font-text);
+}
